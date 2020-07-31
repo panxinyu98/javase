@@ -17,20 +17,52 @@ public class Test4 {
 
 	//   写一个方法，功能：定义一个一维的int 数组，长度任意,然后将它们按从小到大的顺序输出（使用冒泡排序）。
 
-	public static void sum(int x) 
-	{    int n = 1;
-		for(int y=1;y<=x;y++)
+	public static void sum(int n) 
+	{    int sum = 1;
+		for(int i=n;i>n;i--)
 		{
-			n*=y;
+			sum*=i;
 			
 		}
-		System.out.println(n);
+		return ;
 	}
 	
 	
 	
+	public static boolean isleapyear(int year)
+	{
+		if(year%400==0)
+		{
+			return true;
+		}
+		if(year%4==0&&year%100==0)
+		{
+			return true;
+		}
+		return false;
+	}
 	
 	
+	
+	public static int zhishu(int n)
+	{
+		for(int i=n+1;;i++)
+		{
+			boolean flag=true;//是质数
+			for(int j=2;j<i-1;j++)
+			{
+				if(i%j==0)
+				{
+					flag=false;//不是质数
+				}
+			}
+			if(flag)
+			{
+				return i;
+			}
+				
+		}
+	}
 	
 	
 	
