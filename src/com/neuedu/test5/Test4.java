@@ -5,8 +5,12 @@ public class Test4 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		sum(5);
+           
+		System.out.println(sum(5));
 		
+		System.out.println(isleapyear(1995));
+		
+		System.out.println(zhishu(2005));
 		
 	}
 	//编写一个方法，求整数n的阶乘，例如5的阶乘是1*2*3*4*5。 
@@ -17,14 +21,14 @@ public class Test4 {
 
 	//   写一个方法，功能：定义一个一维的int 数组，长度任意,然后将它们按从小到大的顺序输出（使用冒泡排序）。
 
-	public static void sum(int n) 
+	public static int sum(int n) 
 	{    int sum = 1;
 		for(int i=n;i>n;i--)
 		{
 			sum*=i;
 			
 		}
-		return ;
+		return sum;
 	}
 	
 	
