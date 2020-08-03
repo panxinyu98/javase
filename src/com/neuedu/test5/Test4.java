@@ -23,7 +23,7 @@ public class Test4 {
 
 	public static int sum(int n) 
 	{    int sum = 1;
-		for(int i=n;i>n;i--)
+		for(int i=n;i>1;i--)
 		{
 			sum*=i;
 			
