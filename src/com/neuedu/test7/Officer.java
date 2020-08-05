@@ -18,6 +18,20 @@ public class Officer extends Employee{
 		this.vehicleAllowance=vehicleAllowance;
 	}
 	
+	public Officer(String name,int age,String department,double vehicleAllowance)
+	{
+		super(name,age,department);
+		/*this.name=name;
+		this.age=age;
+		this.department=department;*/
+		this.vehicleAllowance=vehicleAllowance;
+	}
+	
+	public void getDetail()
+	{
+		super.getDetail();
+        System.out.println(getVehicleAllowance());
+	}
 	
 	public void work()
 	{
@@ -44,6 +58,9 @@ public class Officer extends Employee{
 		
 	}
 	
+	
+	
+	
 	public static void main(String[] args) {
 		//创建一个子类对象
 		Officer o=new Officer();
@@ -56,6 +73,9 @@ public class Officer extends Employee{
 		o.getVehicleAllowance();
 		o.test();
 		
+		Officer o3=new Officer("xiaoming",23,"reserch",300     );
+		
+		o3.getDetail();
 		
 		
 		

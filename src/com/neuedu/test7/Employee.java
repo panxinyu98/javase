@@ -13,6 +13,10 @@ public class Employee {
 		this.name=name;
 	}
 	
+	public void getDetail()
+	{
+		System.out.println(this.name+","+this.age+","+this.department );
+	}
 	
 	String name;
 	int age;

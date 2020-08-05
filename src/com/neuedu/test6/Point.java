@@ -2,8 +2,8 @@ package com.neuedu.test6;
 
 public class Point {
 
-	int x;
-	int y;
+	protected int x;
+	protected int y;
 	
   	public Point()
 	{
