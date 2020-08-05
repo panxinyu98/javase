@@ -5,18 +5,36 @@ public class TestStudent {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		
+		Student[] arr = new Student[5];
+		
+		//放5个学生
+		arr[0] = new English("xiaohong",88,99,95);//此处有向上转型
+		arr[1] = new Computer("xioli",90,91,92,77);
+		arr[2] = new Literature("xiaowang",88,89,94,75);
+		arr[3] = new English("xiaomao",77,88,96);//此处有向上转型
+		arr[4] = new Computer("xiaogang",92,91,93,82);
+		
+		//循环数组
+		for(Student s: arr)
+		{
+			System.out.println(s.name +":"+s.getTotalScore());//触发了多态
+		}
+		
+        
 	}
 
 }
 
 class Student{
 	
+	String name;	
 	double midscore;
 	double endscore;
 	
-	public Student(double midscore, double endscore)
+	public Student(String name, double midscore, double endscore)
 	{
+		this.name = name;
 		this.midscore = midscore;
 		this.endscore = endscore;
 	}
@@ -33,9 +51,9 @@ class English extends Student{
 	
 	double speech;
 	
-	public English(double speech, double midscore, double endscore)
+	public English(String name, double speech, double midscore, double endscore)
 	{		
-		super(midscore,endscore);		
+		super(name, midscore,endscore);		
 		this.speech = speech;
 	}
 	
@@ -51,9 +69,9 @@ class Computer extends Student{
 	double operation;
 	double writing;
 	
-	public Computer(double operation, double writing, double midscore, double endscore)
+	public Computer(String name, double operation, double writing, double midscore, double endscore)
 	{
-		super(midscore,endscore);
+		super(name,midscore,endscore);
 		this.operation = operation;
 		this.writing = writing;
 	}
@@ -71,9 +89,9 @@ class Literature extends Student{
 	double speech;
 	double product;
 	
-	public Literature(double speech, double product, double midscore, double endscore)
+	public Literature(String name, double speech, double product, double midscore, double endscore)
 	{
-		super(midscore,endscore);
+		super(name,midscore,endscore);
 		this.speech = speech;
 		this.product = product;
 	}
