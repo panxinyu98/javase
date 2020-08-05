@@ -5,7 +5,7 @@ import java.util.Random;
 public class TestCard {
 
 public static void main(String[] args) {
-		
+		//
 		//定义一个数组， 52
 		Card[] cs = new Card[52];
 		
