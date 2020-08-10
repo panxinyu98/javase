@@ -26,7 +26,7 @@ public class TestStudent {
 
 }
 
-class Student{
+abstract class Student{
 	
 	String name;	
 	double midscore;
@@ -40,10 +40,8 @@ class Student{
 	}
 	
 	//这个方法，标准，子类一定要重写这个方法
-	public double getTotalScore()
-	{
-		return 0;
-	}
+	public abstract double getTotalScore();
+	
 	
 }
 
