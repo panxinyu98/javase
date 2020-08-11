@@ -43,12 +43,8 @@ public class Test5 {
 			System.out.println("找到了,位置是："+local);
 		
 		}
-			
-		
-		
-		
-		
-		
+
+		/////////////////////////////////////
 		int i,j;
         int a[]={9,27,10,1,49};
         for(i=0;i<a.length-1;i++){
